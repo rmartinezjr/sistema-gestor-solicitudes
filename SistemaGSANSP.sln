@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30804.86
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SistemaGSANSP", "SistemaGSANSP\SistemaGSANSP.csproj", "{1EF26BAF-E687-4F40-AEAF-0A4FDC146AA8}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SistemaGSANSP", "SistemaGSANSP\SistemaGSANSP.csproj", "{DF9D5514-A6EF-49C8-85C9-FD38612CD6EF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{1EF26BAF-E687-4F40-AEAF-0A4FDC146AA8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{1EF26BAF-E687-4F40-AEAF-0A4FDC146AA8}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{1EF26BAF-E687-4F40-AEAF-0A4FDC146AA8}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{1EF26BAF-E687-4F40-AEAF-0A4FDC146AA8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DF9D5514-A6EF-49C8-85C9-FD38612CD6EF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DF9D5514-A6EF-49C8-85C9-FD38612CD6EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DF9D5514-A6EF-49C8-85C9-FD38612CD6EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DF9D5514-A6EF-49C8-85C9-FD38612CD6EF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {E8A51051-63A3-42DD-902D-342CCC30F59B}
+		SolutionGuid = {0316AA6C-5C93-4467-A695-5A848CCDC3E0}
 	EndGlobalSection
 EndGlobal
