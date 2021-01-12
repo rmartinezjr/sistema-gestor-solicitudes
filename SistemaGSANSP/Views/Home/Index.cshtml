@@ -2,7 +2,55 @@
     ViewData["Title"] = "Home Page";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<div class="sheetSlider sh--default">
+    <input id="s1" type="radio" name="slide1" checked />
+    <input id="s2" type="radio" name="slide1" />
+    <input id="s3" type="radio" name="slide1" />
+
+    <div class="sh__content">
+        <div class="sh__item">
+            <img src="~/Images/slider.png" alt="imgText" class="imgSlider" />
+            <div class="sh__meta">
+                <h4>ANSP</h4>
+                <span>
+                    Sistema de gestion de solicitudes a agentes de seguridad privada de la ANSP.
+                    <a href="#">Ver más.</a>
+                </span>
+            </div>
+        </div>
+
+        <div class="sh__item">
+            <img src="~/Images/slider2.png" alt="imgText" class="imgSlider" />
+            <div class="sh__meta">
+                <h4>ANSP</h4>
+                <span>
+                    Sistema de gestion de solicitudes a agentes de seguridad privada de la ANSP.
+                    <a href="#">Ver más.</a>
+                </span>
+            </div>
+        </div>
+
+        <div class="sh__item">
+            <img src="~/Images/slider3.png" alt="imgText" class="imgSlider" />
+            <div class="sh__meta">
+                <h4>ANSP</h4>
+                <span>
+                    Sistema de gestion de solicitudes a agentes de seguridad privada de la ANSP.
+                    <a href="#">Ver más.</a>
+                </span>
+            </div>
+        </div>
+    </div>
+    <div class="sh__btns">
+        <label for="s1"></label>
+        <label for="s2"></label>
+        <label for="s3"></label>
+    </div>
+    <div class="sh__arrows">
+        <label for="s1"></label>
+        <label for="s2"></label>
+        <label for="s3"></label>
+    </div>
+
 </div>
+

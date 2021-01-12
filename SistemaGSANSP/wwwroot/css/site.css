@@ -7,6 +7,19 @@ a.navbar-brand {
   word-break: break-all;
 }
 
+.imgSlider {
+    max-width: 105%;
+}
+
+.sheetSlider {
+    background-color: #fff;
+    text-align: left;
+}
+
+.imglogo {
+    max-width: 30%;
+}
+
 /* Provide sufficient contrast against white background */
 a {
   color: #0366d6;
@@ -33,6 +46,9 @@ html {
   html {
     font-size: 16px;
   }
+    .navbar-brand {
+        max-width: 20%;
+    }
 }
 
 .border-top {
