@@ -17,7 +17,8 @@ a.navbar-brand {
 }
 
 .imglogo {
-    max-width: 30%;
+    max-width: 25%;
+    margin-right: 10px;
 }
 
 /* Provide sufficient contrast against white background */
