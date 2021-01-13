@@ -44,13 +44,15 @@ namespace SistemaGSANSP.Areas.Identity.Pages.Account
         {
             [Required]
             [EmailAddress]
+            [Display(Name = "Correo")]
             public string Email { get; set; }
 
             [Required]
             [DataType(DataType.Password)]
+            [Display(Name = "Contraseña")]
             public string Password { get; set; }
 
-            [Display(Name = "Remember me?")]
+            [Display(Name = "Recordarme?")]
             public bool RememberMe { get; set; }
         }
 
@@ -82,8 +84,9 @@ namespace SistemaGSANSP.Areas.Identity.Pages.Account
                 var result = await _signInManager.PasswordSignInAsync(Input.Email, Input.Password, Input.RememberMe, lockoutOnFailure: false);
                 if (result.Succeeded)
                 {
-                    _logger.LogInformation("User logged in.");
-                    return LocalRedirect(returnUrl);
+                    //_logger.LogInformation("User logged in.");
+                    //return LocalRedirect(returnUrl);
+                    return Redirect("/Principal/Index");
                 }
                 if (result.RequiresTwoFactor)
                 {
