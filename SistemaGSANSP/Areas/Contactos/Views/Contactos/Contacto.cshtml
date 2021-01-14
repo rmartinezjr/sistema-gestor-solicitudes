@@ -18,19 +18,147 @@
                     <span aria-hidden="true">&times</span>
                 </button>
             </div>
-        </div>
-        <form method="post" asp-area="Contactos" asp-controller="Contactos" asp-action="GetPost">
-            <div class="modal-body">
-                <div class="form-horizontal">
-                    <div class="form-group">
-                        <label asp-for="Input.nombres" class="col-md-2 control-label"></label>
-                        <div class="col-md-10">
-                            <input asp-for="Input.nombres" placeholder="Nombres" class="form-control" />
-                            <span asp-validation-for="Input.nombres" class="text-danger"></span>
+            <form method="post" asp-area="Contactos" asp-controller="Contactos" asp-action="GetContactos">
+                <div class="modal-body">
+                    <div class="form-horizontal">
+                        <div class="form-group">
+                            <label asp-for="Input.nombres" class="col-md-2 control-label"></label>
+                            <div class="col-md-10">
+                                <input asp-for="Input.nombres" placeholder="Nombres" class="form-control" />
+                                <span asp-validation-for="Input.nombres" class="text-danger"></span>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="Input.apellidos" class="col-md-2 control-label"></label>
+                            <div class="col-md-10">
+                                <input asp-for="Input.apellidos" placeholder="Apellidos" class="form-control" />
+                                <span asp-validation-for="Input.apellidos" class="text-danger"></span>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="Input.sexo" class="col-md-2 control-label"></label>
+                            <div class="col-md-10">
+                                <input asp-for="Input.sexo" placeholder="Sexo" class="form-control" />
+                                <span asp-validation-for="Input.sexo" class="text-danger"></span>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="Input.dui" class="col-md-2 control-label"></label>
+                            <div class="col-md-10">
+                                <input asp-for="Input.dui" placeholder="DUI" class="form-control" />
+                                <span asp-validation-for="Input.dui" class="text-danger"></span>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="Input.nit" class="col-md-2 control-label"></label>
+                            <div class="col-md-10">
+                                <input asp-for="Input.nit" placeholder="NIT" class="form-control" />
+                                <span asp-validation-for="Input.nit" class="text-danger"></span>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="Input.fecha_nac" class="col-md-2 control-label"></label>
+                            <div class="col-md-10">
+                                <input asp-for="Input.fecha_nac" placeholder="Fecha de nacimiento" class="form-control" />
+                                <span asp-validation-for="Input.fecha_nac" class="text-danger"></span>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="Input.lugar_nac" class="col-md-2 control-label"></label>
+                            <div class="col-md-10">
+                                <input asp-for="Input.lugar_nac" placeholder="Lugar de Nacimiento" class="form-control" />
+                                <span asp-validation-for="Input.lugar_nac" class="text-danger"></span>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="Input.nomb_padre" class="col-md-2 control-label"></label>
+                            <div class="col-md-10">
+                                <input asp-for="Input.nomb_padre" placeholder="Nombre del padre" class="form-control" />
+                                <span asp-validation-for="Input.nomb_padre" class="text-danger"></span>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="Input.nomb_madre" class="col-md-2 control-label"></label>
+                            <div class="col-md-10">
+                                <input asp-for="Input.nomb_madre" placeholder="Nombre de la madre" class="form-control" />
+                                <span asp-validation-for="Input.nomb_madre" class="text-danger"></span>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="Input.estado_civil" class="col-md-2 control-label"></label>
+                            <div class="col-md-10">
+                                <input asp-for="Input.estado_civil" placeholder="Estado civil" class="form-control" />
+                                <span asp-validation-for="Input.estado_civil" class="text-danger"></span>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="Input.nombre_conyuge" class="col-md-2 control-label"></label>
+                            <div class="col-md-10">
+                                <input asp-for="Input.nombre_conyuge" placeholder="Nombre del conyuge" class="form-control" />
+                                <span asp-validation-for="Input.nombre_conyuge" class="text-danger"></span>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="Input.direcc_actual" class="col-md-2 control-label"></label>
+                            <div class="col-md-10">
+                                <input asp-for="Input.direcc_actual" placeholder="Direccion" class="form-control" />
+                                <span asp-validation-for="Input.direcc_actual" class="text-danger"></span>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="Input.tel_celular" class="col-md-2 control-label"></label>
+                            <div class="col-md-10">
+                                <input asp-for="Input.tel_celular" placeholder="No. de teléfono celular" class="form-control" />
+                                <span asp-validation-for="Input.tel_celular" class="text-danger"></span>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="Input.tel_casa" class="col-md-2 control-label"></label>
+                            <div class="col-md-10">
+                                <input asp-for="Input.tel_casa" placeholder="Teléfono de casa" class="form-control" />
+                                <span asp-validation-for="Input.tel_casa" class="text-danger"></span>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="Input.profes_oficio" class="col-md-2 control-label"></label>
+                            <div class="col-md-10">
+                                <input asp-for="Input.profes_oficio" placeholder="Profesión u oficio" class="form-control" />
+                                <span asp-validation-for="Input.profes_oficio" class="text-danger"></span>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="Input.empresa_trabaja" class="col-md-2 control-label"></label>
+                            <div class="col-md-10">
+                                <input asp-for="Input.empresa_trabaja" placeholder="Empresa donde trabaja" class="form-control" />
+                                <span asp-validation-for="Input.empresa_trabaja" class="text-danger"></span>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="Input.trabaja" class="col-md-2 control-label"></label>
+                            <div class="col-md-10">
+                                <input asp-for="Input.trabaja" />
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="Input.por_su_cuenta" class="col-md-2 control-label"></label>
+                            <div class="col-md-10">
+                                <input asp-for="Input.por_su_cuenta" />
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="Input.estudios_rea" class="col-md-2 control-label"></label>
+                            <div class="col-md-10">
+                                <input asp-for="Input.estudios_rea" placeholder="Estudios realizados" class="form-control" />
+                                <span asp-validation-for="Input.estudios_rea" class="text-danger"></span>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </form>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Cancelar</button>
+                    <button type="submit" onclick="contacto.RegistrarContacto()" class="btn btn-primary">Guardar</button>
+                </div>
+            </form>
+        </div>        
     </div>
 </div>

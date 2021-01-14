@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Identity;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using SistemaGSANSP.Areas.Contactos.Models;
 using SistemaGSANSP.Controllers;
@@ -13,6 +14,7 @@ using System.Threading.Tasks;
 namespace SistemaGSANSP.Areas.Contactos.Controllers
 {
     [Area("Contactos")]
+    [Authorize]
     public class ContactosController : Controller
     {
         private TContacto _contacto;
@@ -40,6 +42,12 @@ namespace SistemaGSANSP.Areas.Contactos.Controllers
             {
                 return RedirectToAction(nameof(HomeController.Index), "Home");
             }            
+        }
+
+        [HttpPost]
+        public IActionResult GetContactos(DataPaginador<TContacto> model)
+        {
+            return View();
         }
     }
 }
