@@ -75,7 +75,8 @@ namespace SistemaGSANSP
                 routes.MapRoute(
                     name: "default",
                     template: "{controller=Home}/{action=Index}/{id?}");
-                routes.MapAreaRoute("Principal", "Principal", "{controller=Principal}/{action='Principal'}/{id?}");
+                routes.MapAreaRoute("Principal", "Principal", "{controller=Principal}/{action=''}/{id?}");
+                routes.MapAreaRoute("Contactos", "Contactos", "{controller=Contactos}/{action=''}/{id?}");
             });
         }
     }
