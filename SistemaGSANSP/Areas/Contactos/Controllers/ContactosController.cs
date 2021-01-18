@@ -45,9 +45,16 @@ namespace SistemaGSANSP.Areas.Contactos.Controllers
         }
 
         [HttpPost]
-        public IActionResult GetContactos(DataPaginador<TContacto> model)
+        public String GetContactos(DataPaginador<TContacto> model)
         {
-            return View();
+            if(model.Input.nombres != null && model.Input.apellidos != null)
+            {
+                return "Hola";
+            }
+            else
+            {
+                return "Llene los campos requeridos";
+            }
         }
     }
 }

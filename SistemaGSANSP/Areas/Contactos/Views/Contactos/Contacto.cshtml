@@ -18,7 +18,7 @@
                     <span aria-hidden="true">&times</span>
                 </button>
             </div>
-            <form method="post" asp-area="Contactos" asp-controller="Contactos" asp-action="GetContactos">
+            <form method="post" asp-area="Contactos" asp-controller="Contactos" asp-action="GetContactos" class="formContacto">
                 <div class="modal-body">
                     <div class="form-horizontal">
                         <div class="form-group">
@@ -152,13 +152,29 @@
                                 <span asp-validation-for="Input.estudios_rea" class="text-danger"></span>
                             </div>
                         </div>
+                        <span id="mensaje" class="text-danger"></span>
+                        <input type="text" required class="hidenn" />
                     </div>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-default" data-dismiss="modal">Cancelar</button>
-                    <button type="submit" onclick="contacto.RegistrarContacto()" class="btn btn-primary">Guardar</button>
+                    <button type="submit" onclick="contactos.RegistrarContacto()" class="btn btn-primary">Guardar</button>
                 </div>
             </form>
         </div>        
     </div>
 </div>
+<script src="~/js/Contactos.js" asp-append-version="true"></script>
+<script src="~/js/site.js" asp-append-version="true"></script>
+<style>
+    /*css param modal*/
+    .hidenn {
+        visibility: hidden;
+        height: 0px;
+        width: 0px;
+    }
+</style>
+
+@section Scripts {
+    @await Html.PartialAsync("_ValidationScriptsPartial")
+}
